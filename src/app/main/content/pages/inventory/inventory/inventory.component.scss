@@ -1,0 +1,235 @@
+@import "src/@fuse/scss/fuse";
+
+:host {
+
+    #about {
+        max-width: 1200px;
+
+        .about-content {
+
+            .general {
+
+                .location {
+
+                    mat-icon {
+                        line-height: 13px !important;
+                    }
+                }
+            }
+
+            .work {
+
+                .job {
+
+                    .company {
+                        padding: 0 16px 0 0;
+                        font-weight: 500;
+                    }
+
+                    .date {
+                        color: rgba(0, 0, 0, 0.54);
+                    }
+                }
+            }
+        }
+
+        .about-sidebar {
+            padding-left: 32px;
+
+            @include media-breakpoint('sm') {
+                padding: 8px
+            }
+
+            .friends {
+
+                .content {
+
+                    .friend {
+                        padding: 4px;
+                    }
+                }
+            }
+
+            .groups {
+
+                .content {
+
+                    .group {
+                        margin-bottom: 16px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .logo {
+                            border: 1px solid rgba(0, 0, 0, 0.12);
+                            margin-right: 16px;
+                        }
+
+                        .name {
+                            font-weight: 500;
+                            font-size: 15px;
+                        }
+
+                        .category,
+                        .members {
+                            color: rgba(0, 0, 0, 0.54);
+                        }
+
+                        .members {
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #add-contact-button {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        padding: 0;
+        z-index: 99;
+    }
+    .full-width {
+      width: 100%;
+      margin: 0;
+    }
+    .end-pagination  .mat-paginator-container {
+      justify-content: flex-start;
+    }
+    .no-padding {
+      padding:0;
+    }
+    .text-truncate {
+      color: rgba(0,0,0,0.87);
+    }
+    .text-truncate a {
+      font-weight: 500;
+      color: rgba(0,0,0,0.87);
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+      text-transform: capitalize;
+    }
+    .text-truncate a:hover {
+      text-decoration: none !important;
+    }
+    .mat-menu-item .material-icons {
+      float: none;
+      vertical-align: top;
+      font-size: 26px;
+      margin-top: 9px;
+    }
+    .edit-icon .mat-icon {
+      margin-top: 5px !important;
+    }
+    .edit-icon:hover {
+    text-decoration: none  !important;
+    }
+
+    
+
+}
+span.logo-text{
+color: white;
+
+}
+.roles-section {
+    padding: 3px 20px;
+    h3{
+        font-size: 18px;
+        color: #35a9f4;
+        font-weight: 600;
+    }
+    form{
+        mat-form-field{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+           
+        } 
+        .submit-button{
+            margin-bottom: 25px;
+            margin-top: 5px;
+        }
+    }
+}
+button#add-contact-button {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    cursor: pointer !important;
+    z-index: 2;
+}
+span.logo-text {
+    display: block;
+}
+// .ps {
+//     padding-right: 24px !important;
+// }
+mat-cell:last-child, mat-footer-cell:last-child, mat-header-cell:last-child {
+     padding-right: 0 !important;
+}
+.full-width {
+    width: 100%;
+    margin: 0;
+}
+.filterbox .mr-8 {
+    margin-top: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 19px;
+    margin-top: 2px;
+    margin-right: 10px !important;
+}
+.filterbox {
+    padding: 20px 0 0;
+}
+.filterbox  .search {
+    color:#35A9F3;
+}
+.item-input-text {
+    float: right;
+    width: 75%;
+}
+.item-name label {
+    font-weight: normal;
+    text-align: right;
+    margin-top: 12px;
+    padding-right: 27px;
+    font-size: 16px;
+}
+.item-name {
+    float: left;
+    width: 25%;
+    text-align: right;
+}
+.modal-content {
+    overflow: hidden;
+}
+.item-input-text h6 {
+    font-weight: normal;
+    text-align: left;
+    margin-top: 15px;
+    padding-right: 27px;
+    font-size: 16px;
+}
+.form-row {
+    float: left;
+    width: 100%;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    padding: 7px 0;
+}
+.form-row:first-child {
+    border-top: 1px solid #e2e2e2;
+}
+.padding-quantity {
+    padding-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+}

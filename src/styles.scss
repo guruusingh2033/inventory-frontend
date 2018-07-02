@@ -1,0 +1,132 @@
+// Import Fuse core library
+@import "@fuse/scss/core";
+
+.code-country {
+  float: left;
+  width: 30%;
+}
+
+.valid-phone {
+  float: right;
+  width: 67%;
+}
+
+.mat-select-content.ng-trigger {
+  font-size: 14px;
+}
+
+
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: transparent;
+  border-color: #ddd;
+}
+.panel-default {
+  border-color: transparent;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ccc;
+}
+.panel {
+  background-color:transparent;
+  box-shadow: none;
+}
+.panel:before {
+content:"\203A";
+float: right;
+font-size: 25px;
+transition: all 0.5s;
+transform: rotate(90deg);
+}
+.panel-open:before {
+  content:"\203A";
+  transform: rotate(-90deg);
+  float: right;
+  transition: all 0.5s;
+  font-size: 25px;
+}
+.panel .panel:before {
+  content:normal;
+}
+.accordion-toggle {
+  font-size: 18px;
+}
+.mat-form-field-wrapper{
+  font-size: 14px;
+}
+.main-profile-form .panel-heading{
+  padding-left: 0;
+  color: #337ab7 !important;
+}
+.main-profile-form .panel-open:before, .main-profile-form .panel:before{
+  font-size: 30px !important;
+}
+.main-profile-form .panel-body.card-block.card-body {
+  padding-bottom: 30px;
+}
+.main-profile-form .submit-button {
+  padding: 2px 65px;
+}
+
+.material-icons {
+  font-size: 29px;
+  float: left;
+}
+.employement-file p, .file-box p {
+  padding-left: 33px;
+  padding-top: 4px;
+  cursor: pointer;
+  /* vertical-align: middle; */
+}
+.file-box .mat-icon, .employement-file .mat-icon  {
+  transform: rotate(180deg);
+}
+.file-box input[type=file] {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.employement-file input[type=file] {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  top: 0;
+  height: 200px;
+  cursor: pointer;
+}
+.interval-file input{
+  cursor: pointer;
+}
+.text-danger {
+  font-size: 15px !important;
+  margin-top: -5px;
+  display: inline-block;
+  position: relative;
+  top: -17px;
+}
+.main-profile-form .panel-body {
+  padding: 15px 0 !important;
+}
+.main-profile-form .panel-heading {
+  background: #eee;
+  padding: 15px;.left-side-dasboard {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+}
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 1250 !important;
+}
+
+.center-block {
+  margin: auto;
+  display: block;
+  max-width: 941px;
+  padding: 42px 5px !important;
+  width: 100%;
+  padding-right: 0 !important;
+}
+
+.small-padding-new {
+  padding-right: 25px !important;
+}

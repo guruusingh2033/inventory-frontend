@@ -1,0 +1,33 @@
+<div id="mail-confirm" fxLayout="column" fusePerfectScrollbar>
+
+  <div id="mail-confirm-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+
+    <div id="mail-confirm-form" *fuseIfOnDom [@animate]="{value:'*',params:{duration:'300ms',y:'100px'}}">
+
+      <div class="logo">
+        <mat-icon class="blue-fg s-96">email</mat-icon>
+      </div>
+
+      <div class="title">Confirm your Phone Number!</div>
+      <form name="registerForm" [formGroup]="confirmation" novalidate class="fill-width">
+        <mat-form-field>
+          <input matInput placeholder="OTP" formControlName="otp">
+          <mat-error *ngIf="confirmationFormErrors.otp.required">
+           Please enter OTP
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="accent" class="submit-button" aria-label="CREATE AN ACCOUNT" [disabled]="confirmation.invalid"
+          (click)="confirm()">
+          confirm!
+        </button>
+        <p class="text-danger">{{failureMsg}}</p>
+      </form>
+      <div class="message">
+        <a class="link" [routerLink]="'/auth/login'">Go back to login page</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
